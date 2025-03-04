@@ -1,0 +1,119 @@
+/* Navbar Container */
+.navbar {
+    background-color: #ffffff; /* White background */
+    padding: 10px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Navbar Brand (Logo) */
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #007bff !important; /* Bootstrap primary color */
+    text-transform: uppercase;
+  }
+  
+  /* Navbar Links */
+  .navbar-nav .nav-link {
+    color: #333 !important;
+    font-size: 1.1rem;
+    padding: 8px 15px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #007bff !important; /* Primary color */
+    background-color: rgba(0, 123, 255, 0.1); /* Light hover effect */
+    border-radius: 5px;
+  }
+  
+  /* Active Link */
+  .navbar-nav .nav-item.active .nav-link {
+    color: #ffffff !important;
+    background-color: #007bff;
+    border-radius: 5px;
+  }
+  
+  /* Search Bar */
+  .navbar .search-input {
+    width: 250px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .navbar .search-input:focus {
+    outline: none;
+    border: 1px solid #007bff;
+  }
+  
+  /* Cart & Wishlist Icons */
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .navbar-icons i {
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar-icons i:hover {
+    color: #007bff;
+  }
+  
+  /* User Dropdown */
+  .dropdown-menu {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .navbar .search-input {
+      width: 180px;
+    }
+  
+    .navbar-icons {
+      gap: 10px;
+    }
+  
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .navbar-nav .nav-link {
+      display: block;
+      padding: 10px;
+    }
+  }
+  
+  /* Login & Register Buttons */
+.auth-buttons .btn {
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .auth-buttons .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .auth-buttons .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .auth-buttons .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
